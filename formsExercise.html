@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Forms Exercise" content="Forms Exercise">
+    <title>Forms Exercise</title>
+</head>
+
+<body>
+    <form>
+        <div>
+            <fieldset>
+
+                <legend>Customer Experience Survey</legend>
+
+                <label for="Store Number">Store Number</label>
+                <select name="store number" id="store number" required>
+                    <option value="" disabled selected>Select A Store</option>
+                    <option value="3109">3109</option>
+                    <option value="2421">2421</option>
+                    <option value="5357">5357</option>
+                </select>
+                <div>
+                    
+                    <form>
+                    <fieldset>
+                        <legend>When you visited</legend>
+
+                        <label for="Date Visited">Date Visited</label>
+                        <input type="date" name="visited" id="visited" value="date" min="2021-01-01" max="2021-12-31">
+                        <br>
+                        <label for="Time">Time</label>
+                        <input type="time" name="time" id="time">
+                    </form>
+                </div>
+                <div>
+                    <label for="Name"> Full Name</label>
+                    <input type="text" id="fullName" placeholder="Name" name="fullName" required>
+                    <br>
+                    <label for="Email">Email:</label>
+                    <input type="email" placeholder="Email" name="email" id="email" required>
+                </div>
+
+                <div>
+                    <fieldset>
+                        <legend>Gender</legend>
+
+                        <input type="radio" id="male" name="gender"  value="Male">
+                        <label for="gender">Male</label>
+                        <br>
+                        <input type="radio" id="female" name="gender" id="female" value="Female" checked>
+                        <label for="female">Female</label>
+                        <br>
+                        <input type="radio" name="gender" id="nb" value="Non Binary">
+                        <label for="nb">Non-Binary</label>
+                        </fieldset>
+                </div>
+
+                <label for="experience">Tell us about your experience:</label>
+                <br>
+
+                <textarea id="experience" cols="20" rows="2"></textarea>
+        
+        <div>
+            <form >
+<label for="times visited">Times visited in the last month:</label>
+<br>
+<input type="number" name="time visited" id="time visited" value="times visited" min="1" max="30">
+<br>
+<input type="checkbox" name="checkbox" id="checkbox" required>
+<label for="checkbox text">Please check the box if you would be willing to be contacted about your experience</label>
+    <div>
+        <label for="pw">Password</label>
+        <input type="password" id="pw" name="pw" minlength="5" maxlength="10" required>
+    </div>
+    <input type="reset" value="Reset">
+    <input type="submit" value="Submit" required>
+        </div>
+    </form>
+
+
+
+        </div>
+
+        </div>
+        </div>
+
+        </fieldset>
+    </form>
+</body>
+
+</html>
